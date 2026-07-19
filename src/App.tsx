@@ -182,7 +182,7 @@ const getFilearnTagStyle = (tag: string, index: number) => {
 export default function App() {
   // Load data from localStorage or initial defaults
   const [portfolioData, setPortfolioData] = useState<PortfolioData>(() => {
-    const saved = localStorage.getItem("prasad_portfolio_data");
+    const saved = localStorage.getItem("prasad_portfolio_data_v3");
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -195,7 +195,7 @@ export default function App() {
 
   // Save updates to localStorage on change
   useEffect(() => {
-    localStorage.setItem("prasad_portfolio_data", JSON.stringify(portfolioData));
+    localStorage.setItem("prasad_portfolio_data_v3", JSON.stringify(portfolioData));
   }, [portfolioData]);
 
   // Tab State
