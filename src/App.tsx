@@ -659,19 +659,22 @@ export default function App() {
       <nav className="bg-[#FAF9F5]/90 backdrop-blur-md border-b-2 border-[#131313] sticky top-0 z-40 py-4 px-6 md:px-12 transition-all">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           
-          {/* Logo with double crescent arc */}
+          {/* Logo with custom smiley face */}
           <div 
             onClick={() => { setActiveTab("projects"); setSelectedProject(null); setSelectedArticle(null); }}
             className="flex items-center gap-2.5 cursor-pointer select-none group"
           >
-            <div className="relative w-9 h-9 flex items-center justify-center bg-[#131313] rounded-full border border-[#131313] transition-transform duration-300 group-hover:scale-105 shadow-[2px_2px_0px_0px_#F05022]">
-              {/* Double semi-circles forming crescent icon */}
-              <div className="absolute w-5 h-5 rounded-full border-[2.5px] border-white border-r-transparent border-t-transparent -rotate-45"></div>
-              <div className="absolute w-1.5 h-1.5 rounded-full bg-filearn-orange right-2 top-2"></div>
+            <div className="relative w-9 h-9 flex items-center justify-center bg-[#131313] rounded-full border border-[#131313] transition-transform duration-300 group-hover:scale-105 shadow-[2.5px_2.5px_0px_0px_#F05022]">
+              <svg className="w-5.5 h-5.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Orange/Red Eye */}
+                <circle cx="16" cy="8" r="2.2" fill="#F05022" />
+                {/* White Smile Curve */}
+                <path d="M 6,13 Q 12,19 18,13" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+              </svg>
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-lg md:text-xl tracking-tight text-[#131313] font-sans leading-none">Read Lite</span>
-              <span className="text-[9px] text-[#131313]/65 font-bold tracking-wider font-mono uppercase mt-0.5">by Prasad Sawant</span>
+              <span className="text-[8.5px] text-neutral-500 font-bold tracking-widest font-mono uppercase mt-1">BY PRASAD SAWANT</span>
             </div>
           </div>
 
