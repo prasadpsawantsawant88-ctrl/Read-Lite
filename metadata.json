@@ -1,0 +1,6 @@
+{
+  "name": "Read Lite",
+  "description": "A responsive and customizable full-stack portfolio, resume, and AI-powered blog featuring emerging tech, Excel, analytics, and business topics with built-in content management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
